@@ -33,31 +33,35 @@ document.addEventListener("keyup", keyUpHandler, false);
 function keyDownHandler(e){
 	if(e.keyCode == 37){
 		left = true;
+		topp = down = right = false;
 	}
 	else if(e.keyCode == 38){
 		topp = true;
+		left = down = right = false;
 	}
 	else if(e.keyCode == 39){
 		right = true;
+		left = down = topp = false;
 	}
 	else if(e.keyCode == 40){
 		down = true;
+		left = right = topp = false;
 	}
 	
 }
 
 function keyUpHandler(e){
 	if(e.keyCode == 37){
-		left = false;
+		//left = false;
 	}
 	else if(e.keyCode == 38){
-		topp = false;
+		//topp = false;
 	}
 	else if(e.keyCode == 39){
-		right = false;
+		//right = false;
 	}
 	else if(e.keyCode == 40){
-		down = false;
+		//down = false;
 	}
 }
 
